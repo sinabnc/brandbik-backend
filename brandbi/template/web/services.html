@@ -1,0 +1,238 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}"  alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
+
+    <!-- Header Start -->
+
+
+
+    <!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Page Header Box Start -->
+					<div class="page-header-box">
+						<h1 class="text-anime-style-3">Services</h1>
+						<nav class="wow fadeInUp" data-wow-delay="0.25s">
+							
+						</nav>
+					</div>
+					<!-- Page Header Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+    <!-- Our Services Section Start -->
+    <div class="our-services page-service">
+        <div class="container">
+            <div class="row">
+                {% for service in services %}
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>{{ service.title }}</h2>
+                                <a href="{{service.get_absolute_url}}"><img src="{% static 'images/arrow.svg' %}" alt=""></a>
+                            </div>
+                            <p>{{ service.description }}</p>                            
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{{ service.image.url }}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Our Services Section End -->
+
+    <!-- Overview Comapny Section Start -->
+    <div class="overview-company">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">ourview comapny</h3>
+                        <h2 class="text-anime-style-3">Stats that matter</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Box Start -->
+                    <div class="counter-box">
+                        <h3><span>13</span></h3>
+						<p>Countries</p>
+                    </div>
+                    <!-- Counter Box End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Box Start -->
+                    <div class="counter-box">
+                        <h3><span class="counter">290</span><em>+</em></h3>
+						<p>Clients</p>
+                    </div>
+                    <!-- Counter Box End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Box Start -->
+                    <div class="counter-box">
+                        <h3><span class="counter">7</span><em>+</em> years</h3>
+						<p>Experience</p>
+                    </div>
+                    <!-- Counter Box End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Box Start -->
+                    <div class="counter-box">
+                        <h3><span class="counter">1500</span><em>+</em></h3>
+						<p>Projects</p>
+                    </div>
+                    <!-- Counter Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overview Comapny Section End -->
+
+    <!-- Exclusive Partners Section Start -->
+    
+    <!-- Exclusive Partners Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">why choose us</h3>
+                        <h2 class="text-anime-style-3">Why choose us ?</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-1.svg" %}" alt="">
+                        </div>
+                        <h3>innovation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-2.svg" %}" alt="">
+                        </div>
+                        <h3>quality-focused</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-3.svg" %}" alt="">
+                        </div>
+                        <h3>value for money</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-md-12">
+                    <!-- Why Us Explore Item Start -->
+                    <div class="why-us-explore-item">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="why-us-section-title">
+                                    <!-- Section Title Start -->
+                                    <div class="section-title">
+                                        <h2 class="text-anime-style-3">Do you want to explore our outstanding work?</h2>
+                                    </div>
+                                    <!-- Section Title End -->
+
+                                    <!-- Explore Item Icon Start -->
+                                    <div class="explore-item-icon">
+                                        <img src="{% static "images/icon-whyus-4.svg" %}" alt="">
+                                    </div>
+                                    <!-- Explore Item Icon End -->
+                                </div>
+                            </div>
+                        </div>                        
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-content wow fadeInUp" data-wow-delay="0.25s">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium , totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-tags wow fadeInUp" data-wow-delay="0.25s">
+                                    <ul>
+                                        <li><a href="#" class="btn-default">instagram</a></li>
+                                        <li><a href="#" class="btn-default">linkedin</a></li>
+                                        <li><a href="{% url "contact" %}" class="btn-default">contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Why Us Explore Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- clients testimonials Section Start -->
+	
+
+ {% endblock %}
+    

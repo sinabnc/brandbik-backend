@@ -1,0 +1,630 @@
+
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="{% static "images/brandbik logo 2" %}" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	
+
+    <!-- Hero Section Start -->
+	<div class="hero">
+		<div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+
+                            <h1 class="text-anime-style-3">The unique digital Strategist to elevate
+                            </h1>
+                            <h2 id="gradin">Your Business</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Body Start -->
+                        <div class="hero-body">
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">We develop high-performing web and mobile apps that bring your vision to life. Our expert team delivers seamless, user-friendly digital solutions to drive your business forward.</p>
+                        </div>
+                        <!-- Hero Body End -->
+
+                        <!-- Hero Footer Start -->
+                        <div class="hero-footer">
+                            <a href="https://api.whatsapp.com/send?phone= 90748 51748
+                            &text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="btn-default wow fadeInUp" data-wow-delay="0.75s">connect with us</a>
+                        </div>
+                        <!-- Hero Footer End -->
+                    </div>
+                    <!-- Hero Left Content End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Hero Video Image Start -->
+                    <div class="hero-video-image">
+                        <div class="hero-image">
+                            <figure class="image-anime reveal">
+                                <img src="{% static "images/hero-img.jpg" %}" alt="">
+                            </figure>                            
+                        </div>
+
+                        <div class="hero-play-button">
+                            <a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==" class=""><i class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
+                    <!-- Hero Video Image End -->
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">about Company</h3>
+                        <h2 class="text-anime-style-3">Websites and Solutions That Transform Your Brand
+
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Image Start -->
+                    <div class="about-image">
+                        <div class="about-img">
+                            <figure class="image-anime reveal">
+                                <img src="{% static "images/about-us-img.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="about-consultation">
+                            <figure>
+                                <img src="{% static "images/about-circle.png" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- About Us Image End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-content">
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">we specialize in driving digital transformation through innovative web development, compelling branding, and cutting-edge app development. Our mission is to craft solutions that not only tell your brand's story but also elevate it to new heights.
+                            .</p>
+
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">With a commitment to excellence, our team navigates the complexities of the digital landscape to deliver impactful results. We understand the nuances of creating powerful digital experiences and are dedicated to helping you thrive in an ever-evolving market..</p>
+                        
+                        <!-- <p class="wow fadeInUp" data-wow-delay="0.75s">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p> -->
+
+                        <ul class="wow fadeInUp" data-wow-delay="1s">
+                            <li>Seamless Growth
+                            </li>
+                            <li>Effortless Scaling
+                            </li>
+                            <li>Proven Expertise
+                            </li>
+                            <li>Proactive Support
+                            </li>
+                            <li>Global Availability
+                            </li>
+                            <li>Active Assistance</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone= 90748 51748
+                        &text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="btn-default wow fadeInUp" data-wow-delay="1.25s">contact us</a>
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Our Services Section Start -->
+    <div class="our-services">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-7 col-md-7">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our services</h3>
+                        <h2 class="text-anime-style-3">What we can offer today</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-5 col-md-5">
+                    <!-- Section Btn Start -->
+                    <div class="section-btn">
+                        <a href="{% url "index" %}" class="btn-default wow fadeInUp" data-wow-delay="0.25s">view all services</a>
+                    </div>
+                    <!-- Section Btn End -->
+                </div>
+            </div>
+
+            <div class="row">
+                {% for s in services  %}
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>{{s.name}}</h2>
+                                <a href="#"><img src="{{s.image.url}}" alt=""></a>
+                            </div>
+                            <p>{{s.discription}}</p>                            
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{{s.image2.url}}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                {% comment %} <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>App Development
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}"" alt=""></a>
+                            </div>
+                            <p>Innovative Apps That Enhance User Engagement and Drive Growth
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-2.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Branding
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}"" alt=""></a>
+                            </div>
+                            <p>Crafting Powerful Brand Identities That Resonate
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-3.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2> Digital Marketing
+                                    </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}"" alt=""></a>
+                            </div>
+                            <p>Strategies That Drive Traffic, Engagement, and Conversions
+
+                                .</p>
+                        </div>                        
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-4.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.25s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Digital Transformation
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}"" alt=""></a>
+                            </div>
+                            <p>Elevate Your Business Through Innovative Digital Solutions
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-5.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Advertising
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}"" alt=""></a>
+                            </div>
+                            <p>Maximize Your Reach with Targeted Advertising Campaigns.</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-6.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div> {% endcomment %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+
+    <!-- Our Work Section Start -->
+    <div class="our-work">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-9">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our works</h3>
+                        <h2 class="text-anime-style-3">Excellence from concept to completion</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-4 col-md-3">
+                    <!-- Section Btn Start -->
+                    <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
+                        <a href="{% url "portfolio" %}" class="btn-default">all portfolio</a>
+                    </div>
+                    <!-- Section Btn End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/hording.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Branding for Cyberceed
+                            </h2>
+                            <p>We partnered with Cyberceed to elevate their brand and establish a powerful, recognizable presence in the consultancy  industry.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/rebran.jpg" %}"" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Brand Identity for Prozoman
+                            </h2>
+                            <p>We had the pleasure of working with Prozoman to develop a compelling brand identity that captures their innovative essence and positions them effectively in the market.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/social 1.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Social Media Marketing 
+                            </h2>
+                            <p>we have successfully executed social media marketing campaigns for a wide range of industries, driving engagement and growth across various platforms..</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="1s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/web.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Website Development for Zayior Resort
+                            </h2>
+                            <p>We had the pleasure of designing and developing a stunning website for Zayior Resort, aimed at capturing the essence of luxury and relaxation that defines their brand.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Work Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">why choose us</h3>
+                        <h2 class="text-anime-style-3">Why choose us ?</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-1.svg" %}" alt="">
+                        </div>
+                        <h3>Proven Expertise and Experience
+                        </h3>
+                        <p>We have a proven track record of delivering successful projects and driving significant results for our clients.
+                            .</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-2.svg" %}" alt="">
+                        </div>
+                        <h3>Tailored Solutions for Your Unique Needs
+                        </h3>
+                        <p>we provide customized solutions designed specifically to meet your individual needs and objectives. 
+                        </p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-3.svg" %}" alt="">
+                        </div>
+                        <h3>Commitment to Excellence and Results
+                        </h3>
+                        <p>Our focus is on delivering high-quality results that drive growth and enhance your business’s digital presence.</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-md-12">
+                    <!-- Why Us Explore Item Start -->
+                    <div class="why-us-explore-item">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="why-us-section-title">
+                                    <!-- Section Title Start -->
+                                    <div class="section-title">
+                                        <h2 class="text-anime-style-3">Curious About Our Outstanding Work?
+                                        </h2>
+                                    </div>
+                                    <!-- Section Title End -->
+
+                                    <!-- Explore Item Icon Start -->
+                                    <div class="explore-item-icon">
+                                        <img src="{% static "images/icon-whyus-4.svg" %}" alt="">
+                                    </div>
+                                    <!-- Explore Item Icon End -->
+                                </div>
+                            </div>
+                        </div>                        
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-content wow fadeInUp" data-wow-delay="0.25s">
+                                    <p>Discover how we bring ideas to life with creativity and precision. Our portfolio showcases a diverse range of projects, each reflecting our commitment to excellence and innovation. Whether you’re interested in seeing how we’ve transformed brand identities, crafted compelling digital experiences, or executed dynamic social media campaigns, our work speaks for itself.</p>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-tags wow fadeInUp" data-wow-delay="0.25s">
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==
+                                            " class="btn-default">instgram</a></li>
+                                        <li><a href="https://www.linkedin.com/company/brandbik-creatives/
+                                            " class="btn-default">linkedin</a></li>
+                                        <li><a href="#" class="btn-default">contact with Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Why Us Explore Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Exclusive Partners Section Start -->
+    
+    <!-- Exclusive Partners Section End -->
+
+    <!-- Clients Testimonials Section Start -->
+	<div class="clients-testimonials">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">client testimonials</h3>
+                        <h2 class="text-anime-style-3">Our customers love us.</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+				<div class="col-md-12">
+					<!-- Testimonial Slider Start -->
+					<div class="testimonial-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<!-- Testimonial Slide Start -->
+								<div class="swiper-slide">
+									<div class="testimonial-item">
+										<div class="testimonial-rating">
+                                            <img src="{% static "images/icon-star.svg" %}"" alt="">
+                                        </div>										
+
+                                        <div class="testimonial-content">
+                                            <p>The app developed is user-friendly and efficient. It’s made a big difference in user experience.</p>
+                                        </div>											
+
+                                        <div class="testimonial-body">
+                                            <figure class="image-anime">
+                                                <img src="{% static "images/WhatsApp Image 2024-08-19 at 16.34.18.jpeg" %}"" alt="">
+                                            </figure>
+                                            <div class="testimonial-author-title">
+                                                <h2>Ahmed Al Muneef</h2>
+                                                <p>asfaf</p>
+                                            </div>										
+                                        </div>													
+									</div>
+								</div>
+								<!-- Testimonial Slide End -->
+                                
+                                <!-- Testimonial Slide Start -->
+								<div class="swiper-slide">
+									<div class="testimonial-item">
+										<div class="testimonial-rating">
+                                            <img src="{% static "images/icon-star.svg" %}"" alt="">
+                                        </div>										
+
+                                        <div class="testimonial-content">
+                                            <p>The rebranding project exceeded our expectations. The new look and messaging are impactful and revitalizing.</p>
+                                        </div>											
+
+                                        <div class="testimonial-body">
+                                            <figure class="image-anime">
+                                                <img src="{% static "images/WhatsApp Image 2024-08-19 at 16.35.31.jpeg" %}"" alt="">
+                                            </figure>
+                                            <div class="testimonial-author-title">
+                                                <h2>Arita Banson</h2>
+                                                <p>Delta Innovation</p>
+                                            </div>										
+                                        </div>													
+									</div>
+								</div>
+								<!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+								<div class="swiper-slide">
+									<div class="testimonial-item">
+										<div class="testimonial-rating">
+                                            <img src="{% static "images/icon-star.svg" %}"" alt="">
+                                        </div>										
+
+                                        <div class="testimonial-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                        </div>											
+
+                                        <div class="testimonial-body">
+                                            <figure class="image-anime">
+                                                <img src="{% static "images/WhatsApp Image 2024-08-19 at 16.36.18.jpeg" %}"" alt="">
+                                            </figure>
+                                            <div class="testimonial-author-title">
+                                                <h2>Banson Doe</h2>
+                                                <p>Horizon Ventures</p>
+                                            </div>										
+                                        </div>													
+									</div>
+								</div>
+								<!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+								{% comment %} <div class="swiper-slide">
+									<div class="testimonial-item">
+										<div class="testimonial-rating">
+                                            <img src="{% static "images/icon-star.svg" %}" alt="">
+                                        </div>										
+
+                                        <div class="testimonial-content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                        </div>											
+
+                                        <div class="testimonial-body">
+                                            <figure class="image-anime">
+                                                <img src="{% static "images/author-2.jpg" %}"" alt="">
+                                            </figure>
+                                            <div class="testimonial-author-title">
+                                                <h2>John Doe</h2>
+                                                <p>Omega Solutions</p>
+                                            </div>										
+                                        </div>													
+									</div>
+								</div> {% endcomment %}
+								<!-- Testimonial Slide End -->             
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<!-- Testimonial Slider End -->
+				</div>
+			</div>
+        </div>
+    </div>
+    <!-- Clients Testimonials Section End -->
+
+    <!-- Latest News Section Start -->
+	
+	<!-- Latest News Section End -->
+
+    <!-- Footer Start -->
+	
+
+    {% endblock %}

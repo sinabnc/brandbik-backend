@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+	<title>Best Advertising Agency in Abu Dhabi | Brandbik Creatives</title>
+<meta name="description" content="Explore the best advertising agency in Abu Dhabi. To grow your business, Brandbik provides branding, marketing, and digital strategies. Get in touch with us." />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://brandbik.com/" />
+<meta property="og:title" content="Best Advertising Agency in Abu Dhabi | Brandbik Creatives" />
+<meta property="og:description" content="Explore the best advertising agency in Abu Dhabi. To grow your business, Brandbik provides branding, marketing, and digital strategies. Get in touch with us." />
+<meta property="og:image" content="https://brandbik.com/static/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://brandbik.com/" />
+<meta property="twitter:title" content="Best Advertising Agency in Abu Dhabi | Brandbik Creatives" />
+<meta property="twitter:description" content="Explore the best advertising agency in Abu Dhabi. To grow your business, Brandbik provides branding, marketing, and digital strategies. Get in touch with us." />
+<meta property="twitter:image" content="https://brandbik.com/static/images/meta-tags.png" />
+	<!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	{% comment %} <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<!-- SlickNav Css -->
+	<link href="{% static "css/slicknav.min.css" %}" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="{% static "css/swiper-bundle.min.css" %}">
+	<!-- Font Awesome Icon Css-->
+	<link href="{% static "css/all.css" %}" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="{% static "css/animate.css" %}" rel="stylesheet">
+	<!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+	<!-- Main Custom Css -->
+	<link href="{% static "css/custom.css" %}" rel="stylesheet" media="screen">
+    <style>
+        #gradin {
+            position: relative;
+            font-weight: bold;
+            background: linear-gradient(to right, #3773fd 0%, #0fe3f6 51%, #3773fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="tt-magic-cursor">
+
+    {% include "web/partials/header.html" %}
+    {% block content %}
+
+    {% endblock %}
+    {% include "web/partials/footer.html" %}
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.our-projects-nav a').on('click', function(e) {
+            e.preventDefault();
+
+            var filterValue = $(this).attr('data-filter');
+            $('.project-item-box').hide(); // Hide all items
+            if (filterValue === '*') {
+                $('.project-item-box').show(); // Show all items
+            } else {
+                $(filterValue).show(); // Show only the filtered items
+            }
+
+            // Remove 'active-btn' class from all and add to the clicked one
+            $('.our-projects-nav a').removeClass('active-btn');
+            $(this).addClass('active-btn');
+        });
+    });
+</script>
+
+    <!-- Jquery Library File -->
+    <script src="{% static "js/jquery-3.7.1.min.js" %}"></script>
+    <!-- Bootstrap js file -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- Validator js file -->
+    <script src="{% static "js/validator.min.js" %}"></script>
+    <!-- SlickNav js file -->
+    <script src="{% static "js/jquery.slicknav.js" %}"></script>
+    <!-- Swiper js file -->
+    <script src="{% static "js/swiper-bundle.min.js" %}"></script>
+    <!-- Counter js file -->
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <!-- Isotop js file -->
+	<script src="{% static "js/isotope.min.js" %}"></script>
+    <!-- Magnific js file -->
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <!-- SmoothScroll -->
+    <script src="{% static "js/SmoothScroll.js" %}"></script>
+    <!-- MagicCursor js file -->
+    <script src="{% static "js/gsap.min.js" %}"></script>
+    <script src="{% static "js/magiccursor.js" %}"></script>
+    <!-- Text Effect js file -->
+	<script src="{% static "js/SplitText.js" %}"></script>
+    <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
+    <!-- Wow js file -->
+    <script src="{% static "js/wow.js" %}"></script>
+    <!-- Main Custom js file -->
+    <script src="{% static "js/function.js" %}"></script>
+</body>
+
+
+</html>
